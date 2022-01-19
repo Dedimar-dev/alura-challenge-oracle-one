@@ -19,19 +19,21 @@
 
 <body>
   <form>
-    <input 
-      placeholder="oi"
-      value="" 
-      id="input-criptografar-descriptografar" 
-      type="text"
+    <textarea 
+      name="input-cripto-descripto" 
+      id="input-cripto-descripto" 
+      cols="30" 
+      rows="20"
+      placeholder="Digite seu texto"
+      autofocus
     >
-
+    </textarea>
     <div class="div-form-btns">
       <div>
         <img src="./assets/Vector.svg" alt="Alerta">
         <p>Apenas letras minúsculas e sem acento.</p>
       </div>
-      <div>
+      <div id="div-btns-form">
         <button 
           id="criptografar" 
           class="criptografar"
@@ -46,9 +48,7 @@
         </button>
       </div>
     </div>
-
   </form>
-  </div>
   <div class="container-sem-texto-e-copiar">
     <div class="div-sem-texto">
       <img src="./assets/High_quality_products.svg" alt="sem-texto">
@@ -59,8 +59,19 @@
 
     </div>
     <div class="div-copiar hidden">
-      <input value="" id="input-copiar" type="text" placeholder="oi" readonly>
-      <button id="btn-copiar">Copiar</button>
+      <textarea 
+        name="input-copiar" 
+        id="input-copiar" 
+        cols="30" 
+        rows="20" 
+        readonly
+      >
+      </textarea>
+      <button 
+        id="btn-copiar"
+      >
+          Copiar
+      </button>
     </div>
   </div>
 
