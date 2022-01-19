@@ -42,7 +42,11 @@ button {
   line-height: 1.9rem;
   letter-spacing: 0em;
   text-align: center;
+}
 
+.click-button {
+  transform: scale(1.01); 
+  box-shadow: 2px 3px 3px rgba(0, 0, 0,0.5);
 }
 
 textarea {
@@ -99,6 +103,7 @@ form {
 
 .criptografar {
   background-color: #0A3871;
+  color: white;
 }
 
 .div-copiar {
@@ -123,7 +128,6 @@ form {
   line-height: 3.6rem;
   letter-spacing: 0em;
   text-align: left;
-
 }
 
 .div-sem-texto {
@@ -188,7 +192,7 @@ form {
   }
 
   .div-copiar {
-    height: 40rem;
+    height: 30rem;
     width: 70rem;
   }
 
