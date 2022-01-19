@@ -1,10 +1,7 @@
-
-
 const descriptografar = (texto) => {
   const arrayPalavras = texto.split(' ');
 
   let novoTexto = arrayPalavras.map(palavra => {
-    palavra = palavra.replace(/ufat/g, 'u');
     palavra =  palavra.replace(/enter/g, 'e');
     palavra = palavra.replace(/imes/g, 'i');
     palavra = palavra.replace(/ai/g, 'a');
