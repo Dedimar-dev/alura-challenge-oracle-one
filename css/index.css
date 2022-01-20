@@ -15,6 +15,7 @@ body {
   background-color: #F3F5FC;
   min-height: 100vh;
   min-width: 100vw;
+  font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -73,7 +74,6 @@ form {
   width: 50rem;
   padding-top: 2rem;
   color:#0a3871;
-  font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
@@ -90,7 +90,6 @@ form {
 
 .div-form-btns div {
   display: flex;
-  font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -121,7 +120,6 @@ form {
 }
 
 #input-copiar {
-  font-family: 'Inter', sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +152,6 @@ form {
 }
 
 .div-sem-texto h3 {
-  font-family: 'Inter', sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -164,7 +161,6 @@ form {
 }
 
 .div-sem-texto p {
-  font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -194,6 +190,7 @@ form {
   .div-copiar {
     height: 30rem;
     width: 70rem;
+    margin-bottom: 3rem;
   }
 
   .div-copiar > * {
@@ -227,9 +224,6 @@ form {
 }
 
 @media (max-width: 720px) {
-  body {
-    align-items: left;
-  }
 
   header {
     padding: 2rem;
@@ -255,7 +249,6 @@ form {
   }
 
   .div-copiar > * {
-    margin-bottom: 3rem;
     width: 40rem;
   }
 
@@ -272,7 +265,7 @@ form {
   .div-sem-texto p {
     font-size: 1.6rem;
     line-height: 2rem;
-  }
+  }  
 }
 
 
