@@ -6,10 +6,19 @@ const seletorDeElementoHTML = (seletor) => {
 const btnCriptografar = seletorDeElementoHTML("#criptografar");
 const btnDescriptografar = seletorDeElementoHTML("#descriptografar");
 const divSemTexto = seletorDeElementoHTML(".div-sem-texto");
+const divSemTextoH3 = seletorDeElementoHTML(".div-sem-texto h3");
+const divSemTextoP = seletorDeElementoHTML(".div-sem-texto p");
 const divCopiar = seletorDeElementoHTML(".div-copiar");
 const btnCopiar = seletorDeElementoHTML("#btn-copiar");
 const inputCriptoDescripto = seletorDeElementoHTML("#input-cripto-descripto");
 const inputCopiar = seletorDeElementoHTML("#input-copiar");
+
+const textoH3divSemTexto = 'Nenhuma mensagem encontrada'
+const textoPdivSemTexto = 'Digite um texto que você deseja criptografar ou descriptografar.'
+divSemTextoH3.textContent = textoH3divSemTexto;
+divSemTextoP.textContent = textoPdivSemTexto;
+
+let mostrarMensagemSucesso  = false;
 
 btnCriptografar.addEventListener('click', event => {
   event.preventDefault();
@@ -32,15 +41,17 @@ btnCopiar.addEventListener('click', event => {
 });
 
 const mostrarTextoParaCopiar = () => {
-  if (inputCopiar.value) {
+  if (mostrarMensagemSucesso) {
     divSemTexto.classList.add('hidden')
     divCopiar.classList.remove('hidden')
   }
 
-  if (!inputCopiar.value) {
+  if (!mostrarMensagemSucesso) {
     divSemTexto.classList.remove('hidden')
     divCopiar.classList.add('hidden')
   }
+
+  mostrarMensagemSucesso = false;
 }
 
 const copiarTexto = () => {
@@ -57,3 +68,14 @@ const adicionarEfeitoNosButton = (button) => {
     button.classList.remove('click-button');
   },200)
 } 
+
+const mostrarMensagemErro = (novoTexto, mensagem1, mensagem2 ) => {
+  divSemTextoH3.textContent = novoTexto? mensagem1 : 'ATENÇÃO!';
+  divSemTextoP.textContent =  novoTexto? mensagem2 : 'Digite seu texto ';
+  divSemTexto.style.color = 'red';
+  setTimeout(() => {
+    divSemTexto.style.color = '#000';
+    divSemTextoH3.textContent = textoH3divSemTexto;
+    divSemTextoP.textContent = textoPdivSemTexto;
+  },4000);
+}
