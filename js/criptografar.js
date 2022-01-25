@@ -1,7 +1,10 @@
 
 const criptografar = (texto) => {
-  const arrayLetras = texto.split('');
+  
+  const textoInvalido = validaTexto(texto);
+  if (textoInvalido) return
 
+  const arrayLetras = texto.split('');
   let novoArrayLetras = arrayLetras.map(letra => {
     if (letra === 'e') {
       letra = 'enter';
@@ -31,7 +34,7 @@ const criptografar = (texto) => {
   });
 
   let novoTexto = novoArrayLetras.join('');
-
+    
   if (!mostrarMensagemSucesso) {
     const mensagem1 = 'Mensagem inválida! ';
     const mensagem2 = 'A criptografia não pode ser realizada.'

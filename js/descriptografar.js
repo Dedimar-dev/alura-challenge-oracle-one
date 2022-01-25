@@ -1,6 +1,9 @@
 const descriptografar = (texto) => {
-  const arrayPalavras = texto.split(' ');
+  
+  const textoInvalido = validaTexto(texto);
+  if (textoInvalido) return
 
+  const arrayPalavras = texto.split(' ');
   let novoTexto = arrayPalavras.map(palavra => {
     if (palavra.includes('enter')) {
       palavra =  palavra.replace(/enter/g, 'e'); 

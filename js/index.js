@@ -77,5 +77,21 @@ const mostrarMensagemErro = (novoTexto, mensagem1, mensagem2 ) => {
     divSemTexto.style.color = '#000';
     divSemTextoH3.textContent = textoH3divSemTexto;
     divSemTextoP.textContent = textoPdivSemTexto;
-  },4000);
+  },4500);
+}
+
+
+const validaTexto = (texto) => {
+  const temAcento = texto.split(/\b/);
+  const temNumero = texto.split(/\d/);
+  const temMaiuscula = texto.toLowerCase() !== texto;
+
+  const mensagem1 = 'ATENÇÃO!';
+  const mensagem2 = 'Apenas letras minúsculas e sem acento.';
+
+  if (temAcento.length > 1 || temNumero.length > 1 || temMaiuscula) {
+    mostrarMensagemErro(texto, mensagem1, mensagem2);
+    return true
+  }
+  return
 }
