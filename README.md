@@ -13,6 +13,7 @@ Projeto desenvolvido durante o Alura Challenge - Oracle ONE, que consiste em des
 - HTML 
 - CSS 
 
+
 # Autor
 <img src="https://user-images.githubusercontent.com/85937748/150689406-ad12d7cb-f044-4f7a-9f26-8e48f74c018c.jpg" width="150"/>
 <b>Dedimar Santos</b>
