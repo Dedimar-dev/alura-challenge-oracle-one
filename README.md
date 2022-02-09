@@ -1,4 +1,4 @@
-<h1 align="center">👨🏿‍💻Desafio Alura Oracle ONE👨</h1>
+<h1 align="center">👨🏿‍💻Desafio Alura Oracle ONE 1👨</h1>
 
 Projeto desenvolvido durante o Alura Challenge - Oracle ONE, que consiste em desenvolver um Decodificador de Texto</a>. Feito para colocar em prática o conhecimento adquirido na primeira trilha do curso.
 
